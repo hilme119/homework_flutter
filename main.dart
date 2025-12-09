@@ -9,7 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
   }
 }
 
@@ -190,7 +193,13 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          Text(title, style: TextStyle(color: color, fontSize: 16)),
+          Text(
+            title,
+            style: TextStyle(
+              color: color,
+              fontSize: 16,
+            ),
+          ),
         ],
       ),
     );
